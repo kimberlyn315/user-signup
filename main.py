@@ -21,6 +21,7 @@
             <input type="checkbox" checked="checked" name="remember" style="margin-
             bottom:15px"> Remember me
         </label>
+    </div>
 
             
 
