@@ -1,4 +1,3 @@
-<!DOCTYPE html>
     <form action="action_page.php" style="border:1px solid #ccc">
         <div class="container">
             <h1>User Sign Up</h1>
