@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 form= """
      <div class="container">
         <h1>User Sign Up</h1>
