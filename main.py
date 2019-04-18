@@ -1,4 +1,4 @@
-form= """
+
     <!DOCTYPE html>
      <div class="container">
         <h1>User Sign Up</h1>
@@ -28,6 +28,6 @@ form= """
             <button type="submit" class="signupbtn">Sign Up</button>
         </div>
     </div>
-"""
+
  
 
