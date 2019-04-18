@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+
     form= """
+    <!DOCTYPE html>
      <div class="container">
         <h1>User Sign Up</h1>
          <p>Please fill in this form to create an account.</p>
@@ -16,12 +17,18 @@
         <label for="psw-repeat"><b>Repeat Password</b></label>
         <input type="password" placeholder="Repeat Password" name="psw-repeat"
         required>
+        <label style="color:red">{password_message}</label>
 
         <label>
             <input type="checkbox" checked="checked" name="remember" style="margin-
             bottom:15px"> Remember me
         </label>
+       
+        <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
     </div>
 
-            
+ 
 
