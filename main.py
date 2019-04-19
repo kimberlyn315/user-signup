@@ -1,29 +1,32 @@
-<!DOCTYPE html>
-    <div class="container">
-        <h1>User Sign Up</h1>
-    </div>
-    
-    <div class="container">
-        <form action="/action_page.php">
-        <label for="usrname">Username</label>
-        <input type="text" id="usrname" name="usrname" required>
+from flask import Flask, request, render_template
+app = Flask(__name__)
+app.config['DEBUG'] = True 
 
-        <label for="psw">Password</label>
-        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 3 or more characters" required>
+@app.route("/")
+def message():
+    #error_message = str("Invalid input")
+    #welcome_message = str("Welcome [username]")
+    return render_template('index.html')
+   
 
-        <input type="submit" value="Submit">
-        </form>
-    </div>
 
-    <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-
-        bottom:15px"> Remember me
-    </label>
-       
-    <div class="clearfix">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
-    </div>
+
+@app.route("/")
+def username():
+    if not valid:
+        return error_message
+    else:
+        return welcome_message
+
+@app.route("/")
+def password():
+    if not valid:
+        return error_message
+    else:
+        return welcome_message
+
+if __name__ == '__main__':
+    app.run()
 
 
  
